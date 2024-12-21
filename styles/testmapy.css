@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 10px;
+  border-radius: 14px;
+  color: rgba(0, 0, 0, 1);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tlacitka {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 80px;
+}
+
+a:hover {
+  background-color: rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, .6);
+  color: black;
+  transition: 0.3s;
+  
+}
+
+
+
+/* MOBILNI ZOBRAZENI tablet */
+
+@media (max-width: 768px) {
+  .tlacitka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    
+  }
+
+  img {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+}
+
+
+/* MOBILNI ZONRAZENI TELEFON S MALYM ROZLISENIM */
+
+@media (max-width: 540px) {
+  .tlacitka {
+    display: grid;
+    grid-template-columns: 75%;
+    
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+}
+
+
